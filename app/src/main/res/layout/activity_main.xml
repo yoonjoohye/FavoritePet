@@ -4,11 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="a67yjh00.com.example.lg.favoritepet.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/msg_title"
+        android:textSize="20sp"
+        android:visibility="invisible"
         />
-
+    <CheckBox
+        android:id="@+id/check_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_lbl"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_quest"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        />
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+        <RadioButton
+            android:id="@+id/radio_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_dog"
+            />
+        <RadioButton
+            android:id="@+id/radio_hedgehog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_hedgehog"
+            />
+        <RadioButton
+            android:id="@+id/radio_lion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_lion"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/but_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_lbl"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/imgv_pet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dog"
+        />
 </LinearLayout>
